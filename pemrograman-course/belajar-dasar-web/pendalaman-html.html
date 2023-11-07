@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../style.css" />
+    <title>Study Learning</title>
+  </head>
+  <body>
+    <nav>
+      <h1><a href="../../index.html">Study Learning</a></h1>
+    </nav>
+    <div class="button-back">
+      <a href="../belajar-dasar-web.html">Back</a>
+    </div>
+    <main>
+      <article>
+        <h2>Pendalaman HTML</h2>
+        <br />
+        <h3>Paragraf</h3>
+        <p>
+          Paragraf adalah elemen paling mendasar dari sebuah dokumen teks. Pada
+          HTML, kita bisa menunjukkan sebuah paragraf dengan menggunakan elemen
+          &lt;p&gt;. Contohnya berikut.
+        </p>
+        <pre style="padding-bottom: 1rem">
+&lt;p&gt;Ini adalah teks dalam elemen paragraf&lt;/p&gt;</pre
+        >
+        <h3>Heading</h3>
+        <p>
+          Dalam menuliskan struktur konten artikel, kita memerlukan judul
+          sebagai topik pembahasan, paragraf sebagai penjelas dari topik yang
+          dibawa, hingga subjudul lagi di dalamnya yang merupakan topik lebih
+          rinci dari topik utama beserta penjelasannya (paragraf), dan
+          seterusnya. Pada HTML, terdapat &lt;h1&gt; hingga &lt;h6&gt; elemen
+          heading yang dapat kita gunakan.
+        </p>
+        <img
+          src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:064efbbced8454ca1470ba5697908a6820230621104914.jpeg"
+          alt="image-1"
+        />
+        <h3>List</h3>
+        <p>
+          Dalam membuat sebuah daftar barang, kita dapat menampilkannya dalam
+          bentuk list. HTML memiliki elemen khusus untuk hal tersebut.
+        </p>
+        <h4>Unordered List</h4>
+        <p>
+          Unordered list merupakan daftar yang tidak mementingkan urutan.
+          Standarnya, unordered list menampilkan bullet pada tiap item list-nya
+          (tetapi kita bisa mengubahnya dengan styling).
+        </p>
+        <img
+          src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:b50273d9962bdb73e638861b09720a2a20230621104914.jpeg"
+          alt="image-2"
+        />
+        <h4>Ordered List</h4>
+        <p>
+          Ordered list digunakan untuk membuat list yang mementingkan urutan.
+          Contohnya, membuat daftar instruksi langkah demi langkah sehingga
+          dibutuhkan urutan yang sesuai. Ordered list bekerja seperti unordered
+          list, tetapi perbedaannya adalah pada tiap item menampilkan angka
+          bukan sebuah bullet.
+        </p>
+        <img
+          src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:fcc05f7f08586ef5c194b76a811caac320230621104914.jpeg"
+          alt="image-3"
+        />
+        <h3>Gambar</h3>
+        <p>
+          Pada HTML untuk menampilkan sebuah gambar kita bisa menggunakan tag
+          &lt;img&gt;. Berbeda dengan elemen lain, elemen &lt;img&gt; tidak
+          menuliskan konten di antara tag pembuka dan tag penutup. Namun, untuk
+          menetapkan gambar yang ditampilkan kita gunakan sebuah atribut.
+        </p>
+        <pre style="padding-bottom: 1rem">
+&lt;img src="https://raw.githubusercontent.com/dicodingacademy/BelajarDasarPemrogramanWeb/099-shared-files/dicoding-logo.png" alt="dicoding"&gt;</pre
+        >
+        <p>Hasilnya:</p>
+        <img
+          src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:1dcf48afc57900e243a5998d0364d42620230621105416.png"
+          alt="image-4"
+        />
+        <p>
+          Hal yang perlu kita perhatikan adalah atribut pada elemen tersebut,
+          terdapat dua elemen yang harus kita gunakan ketika menerapkan elemen
+          &lt;img&gt;.
+        </p>
+        <ul>
+          <li>
+            src
+            <br />
+            Atribut ini berfungsi sebagai sumber dari gambar yang ditampilkan.
+            Atribut ini dapat bernilai url gambar atau path gambar local dari
+            gambar yang digunakan.
+          </li>
+          <li>
+            alt
+            <br />
+            Atribut ini sebenarnya tidak wajib untuk diterapkan, hanya saja
+            atribut ini akan sangat berguna ketika gambar tidak berhasil
+            ditampilkan. Nilai atribut ini merupakan tampilan dari gambar yang
+            ditampilkan dalam bentuk tulisan.
+          </li>
+        </ul>
+        <h3>
+          Inline Formatting Text: Long Quotations, Preformatted Text, dan Figure
+        </h3>
+        <p>
+          Sejauh ini, kita sudah mengenal paragraf, heading, dan juga list pada
+          HTML. Namun, masih ada beberapa lagi yang merupakan spesial teks
+          format yang dapat kita gunakan yaitu &lt;blockquote&gt;, &lt;pre&gt;
+          dan &lt;figure&gt;.
+        </p>
+        <h4>Long Quotations</h4>
+        <p>
+          Jika pada konten kita memiliki sebuah kutipan ataupun sebuah
+          testimonial, kita dapat gunakan format long quotations dengan
+          menggunakan tags &lt;blockquote&gt;. Konten di dalam elemen
+          &lt;blockquote&gt; dapat berupa sebuah paragraf, heading, ataupun
+          list.
+        </p>
+        <img
+          src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:446a3c097ff003b876a4ed0c87a5c59d20230621104913.jpeg"
+          alt="image-5"
+        />
+        <p>
+          Pada elemen ini, kita dapat menggunakan atribut cite untuk menentukan
+          sumber URL dari sebuah kutipan (jika kutipan tersebut bersumber dari
+          sebuah situs website). Namun, tidak ada tampilan yang berbeda pada
+          browser secara kasat mata.
+        </p>
+        <h4>Preformatted Text</h4>
+        <p>
+          HTML akan mengabaikan spasi yang dituliskan secara berulang dan juga
+          line breaks (garis baru). Namun, pada beberapa tipe konten, seperti
+          contoh kode atau puisi hal tersebut sangat berarti. Ada sebuah elemen
+          yang dapat kita gunakan untuk menampilkan konten sesuai yang kita
+          tulis pada text editor. Untuk menggunakannya, kita gunakan elemen
+          &lt;pre&gt; sebagai pembungkus kontennya.
+        </p>
+        <pre>
+&lt;pre&gt;
+SAJAK PUTIH
+ 
+Bersandar pada tari warna pelangi
+Kau depanku bertudung sutra senja
+Di hitam matamu kembang mawar dan melati
+Harum rambutmu mengalun bergelut senda
+ 
+Sepi menyanyi, malam dalam mendoa tiba
+Meriak muka air kolam jiwa
+Dan dalam dadaku memerdu lagu
+Menarik menari seluruh aku
+ 
+Hidup dari hidupku, pintu terbuka
+Selama matamu bagiku menengadah
+Selama kau darah mengalir dari luka
+Antara kita Mati datang tidak membelah...
+ 
+Karya: Chairil Anwar
+&lt;/pre&gt;
+        </pre>
+        <p>Hasilnya:</p>
+        <img
+          src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:734bab3feb3387716bb34aa2f14bf82a20230621105602.png"
+          alt="image-6"
+          style="width: 80%"
+        />
+        <br />
+        <h4>Figure</h4>
+        <p>
+          Elemen &lt;figure&gt; digunakan untuk mempresentasikan konten
+          tersendiri (self-contained content), seperti ilustrasi, diagram, foto,
+          atau bisa juga sebuah baris kode. Dalam elemen figure, kita dapat
+          menuliskan elemen &lt;figcaption&gt; sebagai sebuah caption (judul)
+          untuk konten tersebut.
+        </p>
+        <p>Berikut contoh penerapan elemen ini untuk menampilkan gambar.</p>
+        <img
+          src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:ecf1705e53a2347b4bb8c29052fe194020230621104914.jpeg"
+          alt="image-7"
+        />
+        <h3>
+          Inline Formatting Text: Anchor, Emphasized Text, Important Text, dan
+          Short Quotation
+        </h3>
+        <p>
+          Pada standarnya, elemen HTML memiliki dua sifat, yaitu block dan
+          inline. Elemen yang bersifat block selalu membuat baris baru ketika
+          di-render. Contohnya seperti elemen paragraf, list, heading, dan
+          lainnya. Lawan dari elemen tersebut, yaitu elemen inline. Elemen ini
+          tidak menambahkan baris baru ketika di-render. Apa saja elemen
+          tersebut? Mari kita bahas satu persatu.
+        </p>
+        <h4>Anchor</h4>
+        <p>
+          Anchor (jangkar) merupakan elemen yang digunakan untuk membuat sebuah
+          hyperlink ke halaman atau website lain, file, alamat email, atau URL
+          lainnya. Selain itu, ada atribut wajib agar elemen ini berfungsi
+          dengan baik, yaitu href untuk menetapkan sebuah target yang dituju.
+        </p>
+        <pre>
+&lt;p&gt;Hubungi kami di&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href="https://example.com"&gt;Website&lt;/a>&lt;/li>
+&lt;li>&lt;a href="mailto:info@example.com">Email&lt;/a>&lt;/li>
+&lt;li>&lt;a href="tel:+62123456">Telepon&lt;/a>&lt;/li>
+&lt;li>&lt;a href="#address">Alamat&lt;/a>&lt;/li>
+&lt;/ul>
+        </pre>
+        <p>Hasilnya:</p>
+        <img
+          src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:e0e2e90f8fae56dc6a015a0e8a0b732320230621105753.png"
+          alt="image-8"
+          style="width: 80%"
+        />
+        <h4>Emphasized Text</h4>
+        <p>
+          Gunakan elemen &lt;em> untuk menunjukkan bagian kata yang perlu kita
+          tekankan. Elemen ini menunjukkan stress emphasis atau konten/kata yang
+          perlu mendapatkan penekanan atau perhatian khusus.
+        </p>
+        <pre>
+&lt;p>&lt;em>Dia&lt;/em> adalah seorang pelajar&lt;/p>
+&lt;p>Dia adalah seorang &lt;em>pelajar&lt;/em>&lt;/p>
+        </pre>
+        <p>Hasilnya:</p>
+        <img
+          src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:c5f797a65c89246f4adfaf4ecd7f0fdb20230621105942.png"
+          alt="image-9"
+          style="width: 60%"
+        />
+        <h4>Important Text</h4>
+        <p>
+          Gunakan elemen &lt;strong> untuk menunjukkan sebuah teks yang begitu
+          penting (strong importance), serius ataupun mendesak. Artinya, teks
+          tersebut harus dapat perhatian lebih dari teks biasa lainnya.
+        </p>
+        <pre>
+&lt;p>Kesehatan merupakan hal yang penting, jaga pola makan yang teratur dan &lt;strong>jangan sampai makan tengah malam!&lt;/strong>&lt;/p>
+        </pre>
+        <p>Hasilnya:</p>
+        <img
+          src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:84b9100c475e6583b17f8c7ae0a2460f20230621110116.png"
+          alt="image-10"
+          style="width: 70%"
+        />
+        <h4>Short Quotations</h4>
+        <p>
+          Gunakan elemen &lt;q> untuk menandai sebuah kutipan dalam sebuah teks.
+          Elemen ini berbeda dengan &lt;blockquote>. Elemen ini digunakan untuk
+          kutipan pendek yang terletak di dalam baris (inline).
+        </p>
+        <pre>
+&lt;p>Sebelum pulang kerja, ia berkata kepadaku: &lt;q>Maaf saya tidak bisa hadir dalam pertemuan nanti&lt;/q>&lt;/p>
+        </pre>
+        <p>Hasilnya:</p>
+        <img
+          src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:14d3dcbde02cb58a3c27614374f976a520230621110207.png"
+          alt="image-11"
+          style="width: 70%"
+        />
+        <p>
+          Sama seperti elemen blockquote, elemen quotation marks memiliki
+          atribut cite untuk menentukan sumber URL dari sebuah kutipan (jika
+          kutipan tersebut bersumber dari sebuah situs website). Namun, tidak
+          ada perbedaan yang terlihat secara kasat mata jika dijalankan di
+          browser.
+        </p>
+        <h3>
+          Inline Formatting Text: Citation, Defining Terms, Subscript,
+          Superscript, Highlighted Text, dan Line Break
+        </h3>
+        <p>
+          Kita sudah belajar banyak formatting text. Namun, ada beberapa sisanya
+          yang belum kita bahas. Tentunya, mereka tidak kalah penting dalam
+          membangun konten halaman web yang lebih baik. Mari kita lengkapi
+          pembahasan ini.
+        </p>
+        <h4>Citation</h4>
+        <p>
+          Selain sebuah atribut, &lt;cite> juga merupakan sebuah elemen yang
+          digunakan untuk sebuah rujukan pada sebuah dokumen, contohnya sebuah
+          buku, majalah, artikel, dan lainnya.
+        </p>
+        <pre>
+&lt;p>Informasi selengkapnya bisa Anda dapatkan di &lt;cite>&lt;a href="https://dicoding.com">dicoding.com&lt;/a>&lt;/cite>.&lt;/p>
+        </pre>
+        <p>
+          Standarnya, pada browser sebuah teks yang diberi markup &lt;cite> akan
+          ditampilkan dengan huruf miring (<cite>italic</cite>).
+        </p>
+        <h4>Defining Terms</h4>
+        <p>
+          Elemen &lt;dfn> digunakan ketika mendefinisikan sebuah istilah
+          (<cite>term</cite>). Elemen ini harus terletak pada elemen lain yang
+          menaunginya. Contohnya pada sebuah elemen &lt;p> atau elemen
+          &lt;section>.
+        </p>
+        <pre>
+&lt;p>&lt;dfn>Website&lt;/dfn> merupakan halaman yang menampilkan informasi melalui teks atau gambar. Website dapat diakses melalui internet dengan menggunakan browser.&lt;/p>
+        </pre>
+        <p>
+          Standar pada browser yakni sebuah teks yang diberi markup &lt;dfn>
+          akan ditampilkan dengan huruf miring (<cite>italic</cite>).
+        </p>
+        <h4>Subscript dan Superscript</h4>
+        <p>
+          Subscript &lt;sub> dan superscript &lt;sup> adalah elemen yang dapat
+          membuat teks yang ditampilkan tampak kecil, dengan posisi di bawah
+          (sub) atau di atas (sup) dari teks biasanya. Elemen ini digunakan
+          untuk menunjukkan sebuah rumus kimia ataupun matematika.
+        </p>
+        <pre>
+&lt;p>
+  Sukrosa merupakan suatu disakarida yang dibentuk dari monomer-monomernya yang berupa unit glukosa dan fruktosa, dengan rumus molekul C&lt;sub>12&lt;/sub>H&lt;sub>22&lt;/sub>O&lt;sub>11&lt;/sub>.
+&lt;/p>
+ 
+&lt;p>Salah satu persamaan paling umum dalam semua fisika adalah E=MC&lt;sup>2&lt;/sup>&lt;/p>
+        </pre>
+        <h4>Highlighted Text</h4>
+        <p>
+          Untuk menandai atau menyorot sebuah teks kita bisa menggunakan elemen
+          &lt;mark>. Elemen ini digunakan ketika terdapat sebuah teks yang
+          memiliki peran penting. Biasanya teks tersebut merupakan bagian yang
+          paling relevan atau penting dalam sebuah konteks kalimat.
+        </p>
+        <pre>
+&lt;p>
+  Ini adalah periode perang saudara. Pesawat ruang angkasa pemberontak, menyerang dari pangkalan
+  tersembunyi, telah memenangkan kemenangan pertama mereka melawan Kekaisaran Galactic yang jahat.
+  Selama pertempuran,
+  &lt;mark>mata-mata Pemberontak berhasil mencuri rencana rahasia &lt;/mark>
+  ke senjata pamungkas Kekaisaran, STAR DEATH, stasiun ruang angkasa berlapis baja dengan kekuatan
+  yang cukup untuk menghancurkan seluruh planet.
+&lt;/p>
+        </pre>
+        <p>
+          Standarnya, pada browser teks yang diberi markup &lt;mark> akan
+          ditampilkan dengan background kuning dan teks hitam.
+        </p>
+        <h4>Line Break</h4>
+        <p>
+          <i>Inline line break element</i> (&lt;br>) dapat digunakan untuk
+          memberitahu browser untuk memberikan sebuah garis baru pada baris
+          teks. Sama seperti gambar, elemen ini merupakan elemen kosong sehingga
+          kita tidak membutuhkan sebuah tag penutup.
+        </p>
+        <pre>
+&lt;p>
+  Dicoding Space,&lt;br>
+  Jln. Batik Kumeli No. 50.&lt;br>
+  Bandung.&lt;br>
+  40123
+&lt;/p>
+        </pre>
+        <h3>Semantic HTML: Mengorganisasikan Halaman Konten</h3>
+        <p>
+          Website memiliki hierarki konten yang sama seperti dokumen sehari-hari
+          yang kita baca, majalah, dan koran contohnya. Jadi, hierarki pada
+          sebuah website merupakan hal yang penting. Tentu elemen yang terdapat
+          pada HTML perlu kita kelompokkan menjadi beberapa bagian.
+        </p>
+        <img
+          src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:9655a1733f47246eff401284ad842edd20230621104914.jpeg"
+          alt="image-12"
+        />
+        <p>
+          Kita dapat menggunakan beberapa elemen dalam HTML untuk mengelompokkan
+          sebuah elemen dengan jelas dan memiliki arti (<i>semantic meaning</i
+          >). Elemen-elemen ini memiliki nama sesuai dengan fungsi atau peran
+          dari elemen tersebut.
+        </p>
+        <img
+          src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:31844c42be86e3b00e7a9598555c53ba20230621104914.jpeg"
+          alt="image-13"
+        />
+        <h3>Semantic HTML: Header, Footer, Main, dan Nav</h3>
+        <p>
+          Sebelumnya, kita sudah melihat gambar yang mengelompokkan konten
+          halaman web dengan terstruktur. Organisasi konten tersebut mirip
+          seperti informasi di media cetak seperti koran, bukan? Nah, mari kita
+          belajar beberapa elemen yang berperilaku seperti konten kepala, pokok,
+          samping, dan kaki.
+        </p>
+        <h4>Header dan Footer</h4>
+        <p>
+          Sebuah header dan footer utama yang muncul pada awal dan akhir di
+          sebuah halaman (&lt;body>). Header sebagai pengantar atau pembuka
+          konten dalam sebuah elemen &lt;article> atau &lt;section>, sedangkan
+          Footer sebagai catatan kaki pada sebuah elemen &lt;article> atau
+          &lt;section>.
+        </p>
+        <p>
+          Pada contoh di bawah ini, elemen &lt;header> digunakan untuk
+          menampilkan nama situs dan navigasi utama serta elemen &lt;footer>
+          digunakan sebagai informasi hak cipta.
+        </p>
+        <p>Header:</p>
+        <pre>
+&lt;header>
+  &lt;h1>Bandung&lt;/h1>
+  &lt;p>
+    Kota metropolitan terbesar di Provinsi Jawa Barat, sekaligus menjadi ibu kota provinsi tersebut.
+  &lt;/p>
+  &lt;nav>
+    &lt;ul>
+      &lt;li>&lt;a href="#sejarah">Sejarah&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#geografis">Geografis&lt;/a>&lt;/li>
+      &lt;li>&lt;a href="#wisata">Wisata&lt;/a>&lt;/li>
+    &lt;/ul>
+  &lt;/nav>
+&lt;/header>
+        </pre>
+        <p>Footer:</p>
+        <pre>
+&lt;footer>
+  &copy; 2019, Dicoding Academy
+&lt;/footer>          
+        </pre>
+        <h4>Main</h4>
+        <p>
+          Element <strong>&lt;main></strong> digunakan untuk menampung/mewadahi
+          konten utama (dominan) dalam <strong>&lt;body></strong>. Konten main
+          dapat terdiri dari banyak section, ataupun artikel, atau konten apa
+          pun di dalam elemen main, selama ia termasuk konten utama yang
+          dimiliki oleh website.
+        </p>
+        <pre>
+&lt;body>
+  &lt;header>
+    &lt;!-- Konten header website --&gt;
+  &lt;/header>
+ 
+  &lt;main>
+    &lt;!-- Konten utama website --&gt;
+  &lt;/main>
+ 
+  &lt;footer>
+    &lt;!-- Konten footer website --&gt;
+  &lt;/footer>
+&lt;/body>
+        </pre>
+        <h4>Nav</h4>
+        <p>
+          Elemen <strong>&lt;nav></strong> digunakan untuk menampung sebuah
+          navigasi yang sifatnya penting (mayor), contohnya navigasi utama pada
+          sebuah website.
+        </p>
+        <pre>
+&lt;nav>
+  &lt;ul>
+    &lt;li>&lt;a href="#sejarah">Sejarah&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="#geografis">Geografis&lt;/a>&lt;/li>
+    &lt;li>&lt;a href="#wisata">Wisata&lt;/a>&lt;/li>
+  &lt;/ul>
+&lt;/nav>          
+        </pre>
+        <p>
+          Sebuah navigation pada dasarnya sangat berguna untuk aksesibilitas
+          website kita. Contohnya ketika pengguna website kita menggunakan
+          screen reader dalam mengunjungi website, pengguna akan mudah mencari
+          bagian yang dia inginkan tanpa harus menelusuri seluruh konten
+          website.
+        </p>
+        <h3>Semantic HTML: Articles, Aside, dan Section</h3>
+        <p>
+          Sebelumnya, kita telah membahas beberapa elemen yang bisa dikatakan
+          merupakan konten besar. Hal tersebut karena konten-konten tersebut
+          terlihat jelas pembagiannya. Ada beberapa semantik HTML lainnya yang
+          lebih kecil dan spesifik tentunya. Kali ini, kita akan membahasnya.
+        </p>
+        <h4>Articles</h4>
+        <p>
+          Elemen &lt;article> bertindak sebagai container untuk independent
+          content pada sebuah halaman, artinya konten utuh yang tidak terkait
+          dengan konten lain, bisa saja sebuah artikel blog, komentar, forum
+          post dan konten lainnya.
+        </p>
+        <pre>
+&lt;article>
+  &lt;h2>Sejarah&lt;/h2>
+  &lt;img src="img/history.jpg">
+  &lt;p>Kata Bandung berasal dari kata bendung atau bendungan karena terbendungnya sungai Citarum oleh lava Gunung Tangkuban Parahu yang lalu membentuk telaga...&lt;/p>
+&lt;/article>
+ 
+&lt;article>
+  &lt;h2>Geografis&lt;/h2>
+  &lt;img src="img/geografis.jpg">
+  &lt;p>Kota Bandung dikelilingi oleh pegunungan, sehingga bentuk morfologi wilayahnya bagaikan sebuah mangkok raksasa,[9] secara geografis kota ini terletak di tengah-tengah provinsi Jawa Barat..&lt;/p>
+&lt;/article>
+ 
+&lt;article>
+  &lt;h2>Wisata&lt;/h2>
+  &lt;img src="img/farm-house.jpg">
+  &lt;p>Sejak dibukanya Jalan Tol Cipularang, kota Bandung telah menjadi tujuan utama dalam menikmati liburan akhir pekan terutama dari masyarakat yang berasal dari Jakarta sekitarnya...&lt;/p>
+&lt;/article>
+        </pre>
+        <p>
+          Elemen &lt;article> dapat berada pada elemen &lt;article> lainnya
+          (nested) selama artikel tersebut berkaitan dengan induk elemen
+          &lt;article> yang menampungnya.
+        </p>
+        <h4>Aside</h4>
+        <p>
+          Elemen &lt;aside> memiliki dua tujuan, tergantung kita menempatkannya
+          di dalam sebuah elemen &lt;article> atau tidak.
+        </p>
+        <p>
+          Ketika elemen ini ditempatkan di dalam elemen &lt;article>, elemen ini
+          dapat berisi informasi yang berhubungan dengan artikel tersebut,
+          tetapi bukan bagian dari konten artikelnya itu sendiri (dipisahkan
+          dari konten utama).
+        </p>
+        <p>
+          Ketika elemen ini ditempatkan di luar elemen &lt;article>, elemen ini
+          dapat berisi informasi yang berhubungan pada keseluruhan halaman.
+        </p>
+        <p>
+          Elemen &lt;aside> biasanya terletak di samping dari sebuah elemen yang
+          menampungnya.
+        </p>
+        <pre>
+&lt;main>
+  &lt;div id="content">
+    &lt;!-- ...... --&gt;
+  &lt;/div>
+ 
+  &lt;aside>
+    &lt;article>
+      &lt;header>
+        &lt;h2>Kota Bandung&lt;/h2>
+        &lt;p>Kota Kembang Paris van Java&lt;/p>
+        &lt;figure>
+&lt;img src="img/bandung-badge.png" />
+&lt;figcaption>Lambang&lt;/figcaption>
+        &lt;/figure>
+      &lt;/header>
+    &lt;/article>
+  &lt;/aside>
+&lt;/main>
+        </pre>
+        <h4>Section</h4>
+        <p>
+          Sebuah elemen yang memiliki kesamaan konten dan sebuah heading di
+          dalamnya dapat dikelompokkan dengan menggunakan elemen &lt;section>.
+          Dengan begitu elemen ini dapat digunakan pada sebuah elemen
+          &lt;article> yang memiliki konten panjang dan berpotensi untuk
+          dikelompokkan.
+        </p>
+        <pre>
+&lt;article>
+  &lt;section>
+    &lt;h2>Wisata&lt;/h2>
+    &lt;p>
+      Sejak dibukanya Jalan Tol Cipularang, kota Bandung telah menjadi tujuan utama dalam menikmati
+      liburan akhir pekan terutama dari masyarakat yang berasal dari Jakarta sekitarnya. Selain
+      menjadi kota wisata belanja, kota Bandung juga dikenal dengan sejumlah besar bangunan lama
+      berarsitektur peninggalan Belanda.
+    &lt;/p>
+  &lt;/section>
+ 
+  &lt;section>
+    &lt;h3>Farm House Lembang&lt;/h3>
+    &lt;img src="img/farm-house.jpg" />
+    &lt;p>
+      Kota Bandung dikelilingi oleh pegunungan, sehingga bentuk morfologi wilayahnya bagaikan sebuah
+      mangkok raksasa,[9] secara geografis kota ini terletak di tengah-tengah provinsi Jawa Barat,
+      serta berada pada ketinggian ±768 m di atas permukaan laut, dengan titik tertinggi di berada
+      di sebelah utara dengan ketinggian 1.050 meter di atas permukaan laut dan sebelah selatan
+      merupakan kawasan rendah dengan ketinggian 675 meter di atas permukaan laut.
+    &lt;/p>
+  &lt;/section>
+ 
+  &lt;section>
+    &lt;h3>Observatorium Bosscha&lt;/h3>
+    &lt;img src="img/bosscha.jpg" />
+    &lt;p>
+      Memiliki beberapa teleskop, antara lain, Refraktor Ganda Zeiss, Schmidt Bimasakti, Refraktor
+      Bamberg, Cassegrain GOTO, dan Teleskop Surya. Refraktor Ganda Zeiss adalah jenis teleskop
+      terbesar untuk meneropong bintang. Benda ini diletakkan pada atap kubah sehingga saat teropong
+      digunakan, atap tersebut harus dibuka. Observatorium Bosscha boleh dikunjungi oleh siapa pun,
+      tanpa tiket. Namun, bagi yang ingin menggunakan teleskop Zeiss, wajib mendaftarkan diri. Untuk
+      instansi atau lembaga pendidikan, diberikan jadwal hari Selasa sampai Jumat. Sementara itu,
+      kunjungan individu dibuka setiap hari Sabtu.
+    &lt;/p>
+  &lt;/section>
+&lt;/article>
+        </pre>
+        <h3>Generic Element</h3>
+        <p>
+          HTML menyediakan dua tipe elemen umum (generic element) yang bisa kita
+          kustomisasi untuk menggambarkan konten kita dengan tepat, yaitu div
+          dan span. Elemen ini akan terlibat jika tidak ada semantic element
+          sesuai di HTML.
+        </p>
+        <h4>Div</h4>
+        <p>
+          Elemen &lt;div> merupakan sebuah wadah (container) yang bersifat umum
+          untuk menampung beberapa konten. Elemen ini tidak akan memberikan efek
+          apa pun pada konten atau layout sebelum menerapkan sebuah style
+          menggunakan CSS.
+        </p>
+        <pre>
+&lt;!DOCTYPE html>
+&lt;html>
+  &lt;head>
+    &lt;title>Div Element&lt;/title>
+  &lt;/head>
+  &lt;body>
+    &lt;div>
+      &lt;p>
+        Paragraf ini berada di dalam elemen div, tetapi akan ditampilkan sama seperti paragraf
+        biasanya.
+      &lt;/p>
+    &lt;/div>
+  &lt;/body>
+&lt;/html>
+        </pre>
+        <h4>Span</h4>
+        <p>
+          Elemen &lt;span> memberikan manfaat yang sama seperti &lt;div>,
+          bedanya elemen ini digunakan sebagai phrase elements dan tidak
+          terdapat line breaks ketika menggunakannya. Sederhananya, &lt;span>
+          merupakan sebuah &lt;div> yang digunakan dalam sebuah baris teks yang
+          dapat diwadahi oleh paragraf, list, heading, atau lainnya.
+        </p>
+        <pre>
+&lt;ul>
+  &lt;li>Agil: &lt;span class="phone">08123xxx&lt;/span>&lt;/li>
+  &lt;li>Widy: &lt;span class="phone">08222xxx&lt;/span>&lt;/li>
+  &lt;li>Gilang: &lt;span class="phone">08333xxx&lt;/span>&lt;/li>
+&lt;/ul>          
+        </pre>
+        <h3>Tabel</h3>
+        <p>
+          Elemen &lt;table> pada HTML merepresentasikan data tabular, yaitu
+          informasi yang disajikan dalam sebuah tabel. Tabel sendiri disajikan
+          dalam dua dimensi terdiri dari baris dan kolom (cell) yang berisikan
+          sebuah data. Berikut adalah contoh data sepak bola yang disajikan
+          dalam bentuk tabel.
+        </p>
+        <img
+          src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:e4a8a8b68ba34879fc15a6103466a33f20230621104914.jpeg"
+          alt="image-14"
+        />
+        <h3>Struktur Dasar Tabel</h3>
+        <p>
+          Tabel pada HTML disusun dari tiga buah elemen, yaitu &lt;table>,
+          &lt;tr> dan &lt;td> atau &lt;th>. Elemen &lt;table> digunakan untuk
+          menandakan dimulainya dan diakhirinya sebuah konten tabel dan juga
+          sebagai wadah untuk tabel itu sendiri. Kemudian elemen &lt;tr>
+          digunakan untuk membuat sebuah baris baru yang di dalamnya terdapat
+          elemen &lt;td> atau &lt;th> sehingga menghasilkan sebuah sel.
+        </p>
+        <img
+          src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:b33bf8e2cbd3fa59d947b667b645599a20230621104914.jpeg"
+          alt="image-15"
+        />
+        <h3>Spanning Cell</h3>
+        <p>
+          Dalam aplikasi seperti Microsoft Word, hal ini biasa kita kenal
+          sebagai <cite>merging cell</cite> atau menggabungkan sebuah sel. Ini
+          memang menjadi sebuah fitur dasar dalam membuat sebuah tabel sehingga
+          pada HTML pun kita dapat melakukan hal tersebut.
+        </p>
+        <p>
+          Pada HTML hal ini lebih dikenal sebagai <cite>spanning cell</cite>,
+          yang artinya menjangkau atau merentangkan sebuah ukuran sel lebih dari
+          ukuran yang biasanya.
+        </p>
+        <p>Colspan:</p>
+        <pre>
+&lt;table>
+  &lt;tr>
+    &lt;th>18:00&lt;/th>
+    &lt;th>19:00&lt;/th>
+    &lt;th>20:00&lt;/th>
+  &lt;/tr>
+  &lt;tr>
+    &lt;td colspan="2">Avenger Infinity Wars&lt;/td>
+    &lt;td>It Chapter 2&lt;/td>
+  &lt;/tr>
+  &lt;tr>
+    &lt;td>One Piece: Stampede&lt;/td>
+    &lt;td>Weathering With You&lt;/td>
+    &lt;td>Gundala&lt;/td>
+  &lt;/tr>
+  &lt;tr>
+    &lt;td>Gundala&lt;/td>
+    &lt;td colspan="2">Avenger Infinity Wars&lt;/td>
+  &lt;/tr>
+&lt;/table>
+        </pre>
+        <p>Rowspan:</p>
+        <pre>
+&lt;table border="1">
+  &lt;tr>
+    &lt;th rowspan="3">18:00&lt;/th>
+    &lt;td>Avenger Infinity Wars&lt;/td>
+  &lt;/tr>
+  &lt;tr>
+    &lt;td>One Piece: Stampede&lt;/td>
+  &lt;/tr>
+  &lt;tr>
+    &lt;td>Gundala&lt;/td>
+  &lt;/tr>
+&lt;/table>
+        </pre>
+        <h3>Input User</h3>
+        <p>
+          Hampir seluruh website memiliki elemen input. Data yang dimasukkan
+          akan diproses untuk kebutuhan operasional website dalam menunjang
+          pekerjaan manusia. Ada banyak sekali macam-macam input di dunia ini.
+          Namun, jangan khawatir! HTML menyediakan beragam input yang dapat
+          dimanfaatkan. Berikut daftarnya.
+        </p>
+        <h4>Input Element</h4>
+        <p>
+          Elemen &lt;input> merupakan elemen yang sangat sering dipakai untuk
+          mendapatkan data dari user. Mengapa hal tersebut terjadi? Hal ini
+          karena elemen input memiliki banyak sekali tipe-tipenya, mulai dari
+          teks, password, email, search, file, dsb. Tidak hanya itu, dari sekian
+          tipe input, masing-masingnya juga didukung oleh atribut khusus
+          sehingga pembuatan formulir semakin powerful.
+        </p>
+        <p>Berikut adalah contoh penerapan dari input element.</p>
+        <pre>
+&lt;div>
+  Email:
+  &lt;input type="email" />
+&lt;/div>
+&lt;div>
+  Password:
+  &lt;input type="password" />
+&lt;/div>
+        </pre>
+        <h4>Textarea Element</h4>
+        <p>
+          HTML memiliki elemen khusus yang memungkinkan user menuliskan teks
+          dalam banyak baris. Kenalilah elemen &lt;textarea>! Elemen ini berbeda
+          dengan elemen input sebelumnya. Selain nama elemen yang menjadi
+          pembeda, elemen textarea memiliki tag penutup agar dapat berfungsi
+          dengan baik.
+        </p>
+        <p>Berikut contoh penerapannya.</p>
+        <pre>
+&lt;textarea>
+Belajar
+Dasar
+Pemrograman
+Web
+&lt;/textarea>            
+        </pre>
+        <h4>Label Element</h4>
+        <p>
+          Pembuatan elemen input sudah umum jika dijajarkan dengan elemen label.
+          Ada banyak sekali keuntungan jika memberikan keterangan pada
+          masing-masing elemen input. Beberapa keuntungan penerapan label untuk
+          elemen input sebagai berikut.
+        </p>
+        <ul>
+          <li>
+            Elemen input yang berasosiasi dengan elemen label akan memberikan
+            kemampuan bagi screen reader untuk menjelaskan fungsi dari elemen
+            input tersebut.
+          </li>
+          <li>
+            Memberikan kemampuan bagi browser untuk mengalihkan langsung pada
+            elemen input saat elemen label yang berasosiasi dengannya ditekan
+            atau klik.
+          </li>
+        </ul>
+        <p>Perhatikan contoh kode berikut.</p>
+        <pre>
+&lt;div>
+  &lt;label for="email">Email&lt;/label>
+  &lt;br>
+  &lt;input type="email" id="email" />
+&lt;/div>
+ 
+&lt;div>
+  &lt;label for="password">Password&lt;/label>
+  &lt;br>
+  &lt;input type="password" id="password" />
+&lt;/div>
+        </pre>
+        <h3>Atribut pada Elemen Input</h3>
+        <p>
+          Selain banyaknya variasi elemen input, ada banyak atribut yang
+          tersedia untuk memaksimalkan pembuatan formulir. Ada atribut yang
+          bekerja untuk semua tipe input dan ada atribut yang hanya dikhususkan
+          bagi satu tipe.
+        </p>
+        <p>Berikut adalah contoh penerapan atribut placeholder dan required.</p>
+        <pre>
+&lt;div>
+  &lt;label for="email">Email&lt;/label>
+  &lt;br />
+  &lt;input type="email" id="email" placeholder="example@mail.com" required />
+&lt;/div>
+&lt;br />
+&lt;div>
+  &lt;label for="password">Password&lt;/label>
+  &lt;br />
+  &lt;input type="password" id="password" placeholder="********" required />
+&lt;/div>
+        </pre>
+        <p>Hasilnya:</p>
+        <img
+          src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:8a92cd7e31b98c6602bc77335bc1b56c20230621111811.png"
+          alt="image-16"
+        />
+        <h3>Mengirim Data Formulir</h3>
+        <p>
+          Berbicara mengenai mengirim data dari formulir ke server, kita
+          membutuhkan satu elemen esensial dalam membangun formulir. Sebelumnya,
+          kita hanya belajar tentang variasi elemen input untuk mendapatkan data
+          yang sesuai. Ada satu elemen yang berfungsi sebagai wrapper
+          (pembungkus) dari keseluruhan kolom input atau formulir. Elemen yang
+          dimaksud adalah &lt;form>.
+        </p>
+        <p>
+          Jika diterapkan, berikut adalah contoh sederhana penerapan elemen
+          form.
+        </p>
+        <pre>
+&lt;form>
+  &lt;div>
+    &lt;label for="email">Email&lt;/label>
+    &lt;br />
+    &lt;input type="email" id="email" />
+  &lt;/div>
+ 
+  &lt;div>
+    &lt;label for="password">Password&lt;/label>
+    &lt;br />
+    &lt;input type="password" id="password" />
+  &lt;/div>
+ 
+  &lt;button type="submit">Submit&lt;/button>
+&lt;/form>
+        </pre>
+        <p>
+          Dalam mengirimkan data ke server, kita wajib menerapkan atribut name
+          pada seluruh kolom input dalam formulir. Selain itu, ada dua hal yang
+          perlu dilakukan untuk mengirim data ke server, yaitu menetapkan
+          atribut action dan method pada elemen &lt;form>.
+        </p>
+        <h3>Special Character</h3>
+        <p>
+          Ada beberapa karakter spesial seperti <i>copyright symbol</i> (©) yang
+          tidak termasuk ke dalam standar kelompok <i>ASCII characters.</i>
+          <i>ASCII characters</i>
+          hanya menyediakan karakter seperti huruf, nomor, dan beberapa simbol
+          dasar lainnya.
+        </p>
+        <p>
+          HTML memerlukan sebuah <i>“escaped”</i> character untuk menampilkan
+          karakter khusus. Ada dua cara untuk melakukannya, yakni menetapkan
+          nilai numerik (<i>numeric entity</i>) atau menggunakan nama singkatan
+          yang sudah ditetapkan untuk masing-masing karakternya (<i
+            >named entity</i
+          >). Semua referensi karakter dimulai dengan “&” dan diakhiri dengan
+          “;”.
+        </p>
+        <p>Perhatikan contoh kode berikut.</p>
+        <pre>
+&lt;p>Belajar Dasar Pemrograman Web &copy; 2023, Dicoding&lt;/p>
+        </pre>
+      </article>
+    </main>
+  </body>
+</html>

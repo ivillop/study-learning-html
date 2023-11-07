@@ -1,0 +1,275 @@
+:root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1.5;
+    font-weight: 400;
+  
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+  
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+  }
+  
+  nav {
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 5%;
+    align-items: center;
+  }
+  
+  nav h1 {
+    font-size: 20px;
+    margin-block: .5rem ;
+  }
+
+  .button-back {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 2rem;
+  }
+
+  .button-back a {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: .5rem;
+    padding-inline: 1rem;
+    color: #000;
+    background-color: #a5ddff;
+  }
+
+  .button-back a:hover {
+    background-color: #3a44fc;
+    color: #ffffff;
+    transition: all .1s ease-in;
+  }
+
+  h1 a {
+    color: #000;
+    font-weight: bold;
+  }
+
+  li {
+    list-style-type: none;
+  }
+  
+  ol li {
+    list-style-type: inherit;
+  }
+
+  h2 {
+    margin: 0;
+  }
+
+  h3 {
+    margin: 0;
+  }
+
+  a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+  }
+
+  a:hover {
+    color: #535bf2;
+  }
+  
+  body {
+    margin: 0;
+    min-width: 320px;
+    box-sizing: border-box;
+  }
+  
+  #app {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  main {
+    padding-inline: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .hero {
+    background-image: url(https://mir-s3-cdn-cf.behance.net/project_modules/fs/b9a21791534383.5e341720a5140.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-blend-mode: luminosity;
+    padding: 2rem;
+    color: #a5ddff;
+    border-radius: 10px;
+  }
+  
+  .cards {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+  }
+  
+  a.card {
+    padding-inline: 0 ;
+    border: 0;
+    width: 45%;
+    color: #000;
+    background-color: #a5ddff;
+    border-radius: 5px;
+    border: 1px solid;
+  }
+  
+  .card {
+    padding-inline: 1rem;
+    padding-block: .3rem;
+  }
+  
+  a.card:hover {
+    transform: translate(5px, -5px);
+    box-shadow: -6px 9px 0 0 #000;
+    color: #000;
+    transition: all .1s ease-in;
+  }
+  
+  .card h1 {
+    font-size: 20px;
+  }
+  
+  button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+  }
+  button:hover {
+    border-color: #646cff;
+  }
+  button:focus,
+  button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+  }
+  
+  table {
+    border-spacing: 0;
+  }
+
+  th {
+    border: 1px solid;
+    padding-block: .5rem;
+    max-width: 100%;
+    background-color: #a5ddff;
+  }
+
+  td {
+    border: 1px solid;
+    max-width: 100%;
+    vertical-align: top;
+  }
+
+  td img {
+    border: 0 !important;
+  }
+
+  td p {
+    padding-inline: 1rem;
+  }
+
+  .button-start {
+    display: flex;
+    justify-content: center;
+  }
+
+  .button-start a {
+    border: 1px solid;
+    border-radius: 5px;
+    padding: .5rem;
+    padding-inline: 1.5rem;
+    background-color: #a5ddff;
+    color: #000;
+  }
+
+  .button-start a:hover {
+    color: #000;
+    box-shadow: -6px 9px 0 0 #000000;
+    transition: all .1s ease-in;
+    transform: translate(5px, -5px);
+  }
+
+  .modul {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .materi {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 1rem;
+    padding-block: 1rem;
+    border: 1px solid;
+    border-radius: 5px;
+  }
+
+  article {
+    margin-block: 2rem;
+    margin-inline: 20%;
+  }
+
+  article img {
+    width: 100%;
+    border: 1px solid;
+    border-radius: 5px;
+  }
+
+  article li {
+    list-style-type: inherit;
+  }
+  
+  pre {
+    display: block;
+    padding: 1rem;
+    padding-bottom: 0;
+    background-color: #1a1a1a;
+    color: #fff;
+    overflow: auto;
+    border: 1px solid #000;
+    border-radius: 5px;
+    max-height: 500px;
+    line-height: 2;
+  }
+
+
+  @media (prefers-color-scheme: light) {
+    :root {
+      color: #213547;
+      background-color: #ffffff;
+    }
+    a:hover {
+      color: #747bff;
+    }
+    button {
+      background-color: #f9f9f9;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .card {
+      width: 100%;
+    }
+    article {
+      margin-inline: 10%;
+    }
+  }

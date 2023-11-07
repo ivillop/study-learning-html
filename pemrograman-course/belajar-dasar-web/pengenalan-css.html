@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../style.css" />
+    <title>Study Learning</title>
+  </head>
+  <body>
+    <nav>
+      <h1><a href="../../index.html">Study Learning</a></h1>
+    </nav>
+    <div class="button-back">
+      <a href="../belajar-dasar-web.html">Back</a>
+    </div>
+    <main>
+      <article>
+        <h2>Pengenalan CSS</h2>
+        <p>
+          Website tampak begitu membosankan dan “mengerikan” tanpa adanya CSS.
+          CSS atau Cascading Style Sheet merupakan standar dari W3C untuk
+          mengatur visualisasi berkas yang ditulis pada HTML. CSS hanya sebuah
+          <i>declarative language</i> yang digunakan untuk mendeklarasikan suatu
+          nilai yang nantinya digunakan untuk mengatur tampilan sebuah elemen
+          HTML pada browser.
+        </p>
+        <img
+          src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:4af1779a2b4f90d50b2d8e070ab6f13d20230621112206.png"
+          alt="image-1"
+          style="padding: 1rem; width: 30%"
+        />
+        <h3>Keuntungan dan Cara Kerja CSS</h3>
+        <p>
+          Dengan menerapkan CSS, tampilan website kita akan lebih menarik.
+          Berikut beberapa keuntungan yang didapatkan ketika kita menerapkan
+          CSS.
+        </p>
+        <ul>
+          <li>
+            <b>Dapat mengontrol dan menerapkan layout secara presisi</b>
+            <br />
+            Dengan menggunakan CSS kita bisa membuat sebuah website seperti
+            dokumen cetak dengan desain yang menarik dan presisi.
+          </li>
+          <li>
+            <b
+              >Menghindari pekerjaan yang berulang-ulang dalam menerapkan
+              styling
+            </b>
+            <br />
+            Kita dapat menetapkan styling pada beberapa berkas HTML hanya dengan
+            menggunakan satu berkas CSS.
+          </li>
+          <li>
+            <b>Didukung banyak browser</b>
+            <br />
+            Seluruh browser saat ini minimal sudah mendukung CSS versi 2. Untuk
+            browser yang populer seperti Chrome dan Firefox sudah mendukung CSS
+            versi 3.
+          </li>
+        </ul>
+        <h3>Menulis Aturan Styling</h3>
+        <p>
+          Dalam penggunaan CSS, terdapat dua bagian dalam sebuah rule. Yang
+          pertama adalah identitas elemen atau elemen yang akan menerapkan rule
+          (singkatnya kita akan sebut selector) dan yang kedua adalah deklarasi
+          atau instruksi yang akan diterapkan pada sebuah selector.
+        </p>
+        <img
+          src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:87f1c61ec8a624a66c3b50321f73685520230621112133.jpeg"
+          alt="image-2"
+        />
+        <h3>Melampirkan Styling pada Dokumen HTML</h3>
+        <p>Berikut adalah cara melampirkan styling pada dokumen HTML.</p>
+        <h4>External Style Sheet</h4>
+        <p>
+          <i>External Style Sheet</i>merupakan berkas terpisah yang di dalamnya
+          hanya ada CSS rules. Berkas ini harus berekstensi .css, dan akan
+          dihubungkan pada dokumen HTML. Cara ini merupakan yang paling
+          <i>powerful</i> dalam menerapkan <i>styling</i>. Dengan cara ini, satu
+          berkas styling (.css) dapat digunakan oleh banyak berkas HTML.
+        </p>
+        <pre>
+&lt;head>
+    &lt;meta charset="UTF-8" />
+    &lt;title>Judul Dokumen&lt;/title>
+   
+    &lt;!-- Impor berkas CSS Anda --&gt;
+    &lt;link rel="stylesheet" href="style.css">
+&lt;/head>
+        </pre>
+        <h4>Embedded Style Sheet</h4>
+        <p>
+          Embedded Style Sheet merupakan kumpulan rules yang dituliskan dalam
+          berkas HTML dengan menggunakan elemen &lt;style>. Penulisan rules
+          harus dituliskan dalam elemen &lt;style> dan biasanya ditempatkan di
+          dalam &lt;head> dari berkas HTML.
+        </p>
+        <pre>
+&lt;head>
+    &lt;meta charset="UTF-8" />
+    &lt;title>Judul Dokumen&lt;/title>
+   
+    &lt;style>
+      h1 {
+        color: green;
+      }
+    &lt;/style>
+&lt;/head>
+        </pre>
+        <h4>Inline Style</h4>
+        <p>
+          <i>Inline Style</i> merupakan styling yang diterapkan pada elemen HTML
+          dengan menggunakan atribut style. Contohnya seperti berikut.
+        </p>
+        <pre>
+&lt;nama-elemen style="color: green">Konten dari Elemen HTML&lt;/nama-elemen>
+        </pre>
+        <p>
+          Untuk menambahkan styling properties lainnya (multiple properties),
+          kita tuliskan dengan menggunakan semicolon (;) sebagai pemisah antar
+          styling properties-nya.
+        </p>
+        <h3>CSS Conception</h3>
+        <p>Berikut adalah rangkuman penjelasan materi dalam submodul ini.</p>
+        <h4>Inheritance</h4>
+        <p>
+          <i>Styling</i> HTML bersifat <i>inheritance</i> yang dapat mewarisi
+          properti style “tertentu” pada suatu elemen ke elemen-elemen di
+          dalamnya (<i>child-elements</i>).
+        </p>
+        <p>
+          Contohnya, CSS rules yang ditetapkan untuk elemen &lt;body> akan
+          diterapkan pada seluruh child-elements secara otomatis.
+        </p>
+        <pre>
+body {
+    font-family: sans-serif;
+}
+        </pre>
+        <p>Hasilnya berikut:</p>
+        <img
+          src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:8826a434dd0aa01e118b0a9a4b4eba6f20230621112133.jpeg"
+          alt="image-3"
+        />
+        <h4>Group Selector</h4>
+        <p>
+          Jika beberapa selector yang berbeda memiliki penerapan
+          properti-properti yang sama, kita dapat menggabungkan selector
+          tersebut menggunakan group selector. Hal ini dapat meminimalisir
+          penulisan kode yang berulang.
+        </p>
+        <p>
+          Contohnya berikut. Gunakan tanda koma (,) untuk memisahkan tiap
+          selector-nya.
+        </p>
+        <pre>
+h2, h3 {
+    color: #00A2C6;
+}
+        </pre>
+        <h4>Rule Order</h4>
+        <p>
+          <i>Cascading</i> artinya “mengalir”. Demikian halnya dengan alur kerja
+          CSS dalam membaca kode, mengalir dari atas ke bawah. Oleh karena itu,
+          kita harus memperhatikan urutan dalam penulisan rules, terutama saat
+          terjadi sebuah konflik.
+        </p>
+        <pre>
+p {
+    color: red;
+  }
+   
+  p {
+    color: blue;
+}
+        </pre>
+        <p>Hasilnya berikut.</p>
+        <img
+          src="https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/original/academy/dos:7085e2b39e00ca19087dd737a34b8e5420230621112742.png"
+          alt="image-4"
+        />
+      </article>
+    </main>
+  </body>
+</html>
