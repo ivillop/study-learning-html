@@ -217,6 +217,7 @@
     padding-block: 1rem;
     border: 1px solid;
     border-radius: 5px;
+    gap: 1rem;
   }
 
   article {
@@ -246,13 +247,19 @@
     max-height: 500px;
     line-height: 2;
   }
-
   
   @media screen and (max-width: 768px) {
     .card {
-      width: 100%;
+      width: 100% !important;
     }
     article {
       margin-inline: 10%;
+    }
+  }
+
+  @media screen and (max-width: 425px) {
+    .materi {
+      flex-direction: column;
+      align-items: flex-start;
     }
   }
