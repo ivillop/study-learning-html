@@ -262,4 +262,12 @@
       flex-direction: column;
       align-items: flex-start;
     }
+    
+    .button-start {
+      width: 100%;
+    }
+    .button-start a {
+      width: 100%;
+      text-align: center;
+    }
   }
